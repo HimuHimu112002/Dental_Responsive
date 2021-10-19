@@ -428,7 +428,7 @@
                                 <li><h6>For Super Professional</h6></li>
                             </ul>
                             <ul class="second">
-                                <li><h1 class="counter">19.99</h1></li>
+                                <li><h1><span class="countfect" data-num="19.99"></span></h1></li>
                                 <li><h6>per month</h6></li>
                             </ul>
                             <ul class="third">
@@ -450,7 +450,7 @@
                                 <li><h6>For Super Professional</h6></li>
                             </ul>
                             <ul class="second">
-                                <li><h1 class="counter">47.99</h1></li>
+                                <li><h1><span class="countfect" data-num="47.99"></span></h1></li>
                                 <li><h6>per month</h6></li>
                             </ul>
                             <ul class="third">
@@ -472,7 +472,7 @@
                                 <li><h6>For Super Professional</h6></li>
                             </ul>
                             <ul class="second">
-                                <li><h1 class="counter">98.99</h1></li>
+                                <li><h1><span class="countfect" data-num="98.99"></span></h1></li>
                                 <li><h6>per month</h6></li>
                             </ul>
                             <ul class="third">
@@ -612,9 +612,7 @@
       </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.preloadinator.min.js"></script>
     <script src="aos/aos.js"></script>
@@ -641,13 +639,6 @@
         $('.js-preloader').preloadinator({
           minTime: 2000
         });
-
-        $('.counter').counterUp({
-            delay: 30,
-            time: 4000
-        });
-
-
         $(document).ready(function(){
 	        $(window).scroll(function(){
         if($(this).scrollTop() > 40){
@@ -659,5 +650,15 @@
         });
 
       </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 30,
+            time: 3000
+        });
+    </script>
+    <script src="js/countfect.min.js"></script>
   </body>
 </html>
